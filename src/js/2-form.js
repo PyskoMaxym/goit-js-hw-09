@@ -36,6 +36,9 @@ let formData = {
   
   function handleSubmit(event) {
     event.preventDefault();
+
+    formData.email = emailInput.value.trim();
+    formData.message = messageInput.value.trim();
   
     if (!formData.email || !formData.message) {
       alert('Fill please all fields');
